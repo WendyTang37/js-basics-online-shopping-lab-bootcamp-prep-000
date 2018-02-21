@@ -30,12 +30,20 @@ function viewCart() {
     console.log('Your shopping cart is empty.');
   }
   
+<<<<<<< HEAD
   var cartString = 'In your cart, you have';
+=======
+  var cartString = 'In your cart, you have ';
+>>>>>>> 9a2734fad6fe4f1c76e96ad4277dde5b5f181517
   for(let i = 0; i < cart.length; i++) {
     var currentItem = cart[i];
     var itemName = Object.keys(currentItem)[0];
     var itemPrice = currentItem[itemName];
+<<<<<<< HEAD
     var addString = `${i>0&&cart.length>2?',': ''} ${i>0&&i===cart.length-1?'and ':''}${itemName} at $${itemPrice}${i===cart.length-1?'.':''}`
+=======
+    var addString = `${i===1&&?'and ':''}${itemName} at $${itemPrice}${i===cart.length-1?'.':''}`
+>>>>>>> 9a2734fad6fe4f1c76e96ad4277dde5b5f181517
     cartString = cartString + addString;
   }
   console.log(cartString);
